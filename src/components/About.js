@@ -38,7 +38,7 @@ const About = () => {
             viewport={{ once: true }}
           >
             {[
-              { number: '5+', label: 'AI Projects' },
+              { number: '4+', label: 'AI Projects' },
               { number: '3+', label: 'Hackathons' },
               { number: '8+', label: 'Tech Skills' },
               { number: '100%', label: 'Dedication' },
