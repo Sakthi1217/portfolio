@@ -52,7 +52,30 @@ const About = () => {
               </div>
             ))}
           </motion.div>
-        </motion.div>
+
+          {/* Areas of Interest */}
+          <motion.div
+            className="mt-12 p-6 bg-slate-900 rounded-lg border border-slate-700 hover:border-cyan-400 transition-colors"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-xl font-black text-cyan-300 mb-4">Areas of Interest</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {[
+                'Generative AI & LLMs',
+                'Agentic AI Systems & Multi-Agent Reasoning',
+                'AI-Powered Automation',
+                'Multimodal AI Applications',
+              ].map((interest, idx) => (
+                <div key={idx} className="flex items-center gap-3">
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full" />
+                  <p className="text-slate-300 font-semibold">{interest}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
       </div>
     </section>
   );
