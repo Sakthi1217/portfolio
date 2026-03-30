@@ -43,7 +43,7 @@ const Hero = () => {
 
           {/* Title */}
           <motion.p variants={item} className="text-2xl sm:text-3xl font-bold text-cyan-300">
-            AI Systems & Cloud Developer
+            GenAI & Agentic AI Developer
           </motion.p>
 
           {/* Tagline */}
