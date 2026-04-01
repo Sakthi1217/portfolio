@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 import { FiDownload, FiExternalLink } from 'react-icons/fi';
 
 const Resume = () => {
-  const resumePath = '/resume_sakthi.pdf';
+  const resumePath = `${process.env.PUBLIC_URL}/resume_sakthi.pdf`;
 
   const handleDownload = () => {
     const link = document.createElement('a');
     link.href = resumePath;
     link.download = 'B_C_Sakthi_Karthik_Resume.pdf';
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
