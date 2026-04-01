@@ -37,7 +37,8 @@ body {
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-400 bg-clip-text text-transparent font-bold;
+  @apply bg-gradient-to-r from-cyan-300 via-cyan-400 to-blue-400 bg-clip-text text-transparent font-bold overflow-visible;
+  background-size: 200% auto;
 }
 
 .card-hover {
@@ -62,9 +63,9 @@ h1 {
 }
 
 h2 {
-  @apply text-slate-100;
+  @apply text-slate-100 overflow-visible;
 }
 
 h3 {
-  @apply text-slate-200;
+  @apply text-slate-200 overflow-visible;
 }
